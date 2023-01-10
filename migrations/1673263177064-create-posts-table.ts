@@ -14,6 +14,7 @@ export class createPostsTable1673263177064 implements MigrationInterface {
             isNullable: false,
             isUnique: true,
             isPrimary: true,
+            isGenerated: true,
           },
           {
             name: "author_id",

@@ -19,6 +19,7 @@ export class createUsersPostTable1673264463933 implements MigrationInterface {
             isNullable: false,
             isUnique: true,
             isPrimary: true,
+            isGenerated: true,
           },
           {
             name: "user_id",
