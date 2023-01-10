@@ -14,6 +14,7 @@ export class createUsersTable1673249277101 implements MigrationInterface {
             isNullable: false,
             isUnique: true,
             isPrimary: true,
+            isGenerated: true,
           },
           {
             name: 'email',
