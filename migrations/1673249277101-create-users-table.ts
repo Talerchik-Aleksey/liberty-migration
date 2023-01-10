@@ -59,6 +59,11 @@ export class createUsersTable1673249277101 implements MigrationInterface {
             isNullable: false,
             default: 'CURRENT_TIMESTAMP',
           },
+          {
+            name: "deleted_at",
+            type: "timestamp with time zone",
+            isNullable: true,
+          },
         ],
       }),
       true
