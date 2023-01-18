@@ -5,7 +5,7 @@ import {
   TableForeignKey,
 } from "typeorm";
 
-const TABLE_NAME = "thread-messages";
+const TABLE_NAME = "thread_messages";
 
 export class createThreadsMessagesTable1674039173462
   implements MigrationInterface
