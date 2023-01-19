@@ -4,7 +4,7 @@ const TABLE_NAME_FAVORITE_POSTS = "favorite_posts";
 const TABLE_NAME_USER_POSTS = "user_posts";
 const TABLE_NAME_THREADS = "threads";
 const TABLE_NAME_THREAD_MESSAGES = "thread_messages";
-const COLUMN_NAME = "event_time";
+const COLUMN_NAME = "deleted_at";
 
 export class addColumnDeletedAt1674134479337 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
