@@ -11,7 +11,7 @@ export class deleteColumnEventTime1675072603215 implements MigrationInterface {
   }
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
-      `ALTER TABLE ${TABLE_NAME} ADD COLUMN ${COLUMN_NAME} type`
+      `ALTER TABLE ${TABLE_NAME} ADD COLUMN ${COLUMN_NAME} timestamp with time zone`
     );
   }
 }
