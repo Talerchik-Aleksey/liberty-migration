@@ -1,4 +1,9 @@
-import { MigrationInterface, QueryRunner, Table, TableForeignKey } from "typeorm";
+import {
+  MigrationInterface,
+  QueryRunner,
+  Table,
+  TableForeignKey,
+} from "typeorm";
 
 const TABLE_NAME = "posts";
 
@@ -109,12 +114,12 @@ export class createPostsTable1673263177064 implements MigrationInterface {
     );
 
     await queryRunner.createForeignKeys(TABLE_NAME, [
-        new TableForeignKey({
-          columnNames: ['author_id'],
-          referencedColumnNames: ['id'],
-          referencedTableName: 'users',
-        }),
-      ]);
+      new TableForeignKey({
+        columnNames: ["author_id"],
+        referencedColumnNames: ["id"],
+        referencedTableName: "users",
+      }),
+    ]);
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
