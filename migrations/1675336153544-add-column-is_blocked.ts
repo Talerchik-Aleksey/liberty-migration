@@ -16,5 +16,7 @@ export class migrations1675336153544 implements MigrationInterface {
     );
   }
 
-  public async down(queryRunner: QueryRunner): Promise<void> {}
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.dropColumn(TABLE_NAME, COLUMN_NAME);
+  }
 }
