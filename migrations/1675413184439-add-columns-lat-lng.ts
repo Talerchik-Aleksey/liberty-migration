@@ -13,7 +13,7 @@ export class addColumnsLatLng1675413184439 implements MigrationInterface {
         name: COLUMN_NAME_LAT,
         type: "decimal",
         precision: 8,
-        scale: 6,
+        scale: 7,
         isNullable: true,
         default: null,
       })
@@ -24,7 +24,7 @@ export class addColumnsLatLng1675413184439 implements MigrationInterface {
         name: COLUMN_NAME_LNG,
         type: "decimal",
         precision: 9,
-        scale: 6,
+        scale: 7,
         isNullable: true,
         default: null,
       })
@@ -35,7 +35,7 @@ export class addColumnsLatLng1675413184439 implements MigrationInterface {
         name: COLUMN_NAME_LAT,
         type: "decimal",
         precision: 8,
-        scale: 6,
+        scale: 7,
         isNullable: true,
         default: null,
       })
@@ -46,7 +46,7 @@ export class addColumnsLatLng1675413184439 implements MigrationInterface {
         name: COLUMN_NAME_LNG,
         type: "decimal",
         precision: 9,
-        scale: 6,
+        scale: 7,
         isNullable: true,
         default: null,
       })
