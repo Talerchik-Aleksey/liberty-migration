@@ -16,12 +16,12 @@ export class createCommentsRelation1686386664650 implements MigrationInterface {
             generationStrategy: "increment",
           },
           {
-            name: "postId",
+            name: "post_id",
             type: "int",
             isNullable: false,
           },
           {
-            name: "userId",
+            name: "user_id",
             type: "int",
             isNullable: false,
           },
@@ -31,17 +31,17 @@ export class createCommentsRelation1686386664650 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: "createdAt",
+            name: "created_at",
             type: "timestamp",
             default: "now()",
           },
           {
-            name: "updatedAt",
+            name: "updated_at",
             type: "timestamp",
             default: "now()",
           },
           {
-            name: "deletedAt",
+            name: "deleted_at",
             type: "timestamp",
             isNullable: true,
           },
