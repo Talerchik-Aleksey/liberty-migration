@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "migration:create": "npm run typeorm -- migration:create ",
+    "migration:create": "npm run typeorm migration:create ./migrations/history/$npm_config_name",
     "migration:run": "npm run typeorm migration:run -- -d ./data-source.ts",
     "migration:revert": "npm run typeorm migration:revert -- -d ./data-source.ts",
     "migration:generate": "npm run typeorm migration:generate -- -d ./data-source.ts ./migrations/post-refactoring/latest-changes-migration",
+    "migration:drop": "npm run typeorm schema:drop -- -d ./data-source.ts",
     "typeorm": "typeorm-ts-node-esm"
   },
   "repository": {
